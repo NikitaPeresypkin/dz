@@ -23,7 +23,7 @@ public class Main {
         task6(600);
 
         task(7);
-        task7(700);
+        System.out.println(task7(-15));//задание 7 вывод результата метода в консоль
 
         task(8);
         task8("Я два раза повторять не буду!",2);
@@ -110,14 +110,7 @@ public class Main {
         }
     }
     public static boolean task5(int one, int two){
-        boolean ot;
-        if (one+two < 10)  ot=false;
-
-        else if (one+two > 20)  ot=false;
-        else ot=true;
-
-
-        return ot;
+           return 10 <= (one + two) && (one + two) <= 20;
     }
     public static void task6(int s){
         String sign;
@@ -126,9 +119,9 @@ public class Main {
         System.out.println(sign);
 
     }
-    public static void task7(int s){
-        boolean sign = s < 0;
-                System.out.println(sign);
+    public static boolean task7(int s){
+         return s < 0;
+
 
     }
     public static void task8(String text,int q){
@@ -137,9 +130,7 @@ public class Main {
         }
     }
     public static boolean task9(int y){;
-       boolean ly = (y % 4 == 0 && y % 100 != 0 || y % 400 == 0);  //каждый четвёртый и никогда не сотый или каждый четырёхсотый
-
-        return ly;
+      return  y % 4 == 0 && y % 100 != 0 || y % 400 == 0;  //каждый четвёртый и никогда не сотый или каждый четырёхсотый
     }
 
     public static int[] task14 (int len, int initialValue){
