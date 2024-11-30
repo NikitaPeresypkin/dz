@@ -1,28 +1,20 @@
 package org.example;
 
 public class Сотрудник {
-    String ФИО;
-    String должность;
-    String email;
-    int телефон;
-    int зарплата;
-    int возраст;
+    String ФИО, должность, email;
+    int телефон, зарплата, возраст;
 
-    public Сотрудник(String fullName, String jobTitle, String emailAdress, int telephoneNumber, int salary, int age) {
-
-
-        ФИО = fullName;
-        должность = jobTitle;
-        email = emailAdress;
-        телефон = telephoneNumber;
-        зарплата = salary;
-        возраст = age;
-
+    public Сотрудник(String ФИО, String должность, String email, int телефон, int зарплата, int возраст) {
+        this.ФИО = ФИО;
+        this.должность = должность;
+        this.email = email;
+        this.телефон = телефон;
+        this.зарплата = зарплата;
+        this.возраст = возраст;
     }
 
     public void someInfo() {
-
-         System.out.println("ФИО: " + ФИО + "\n" + "должность: " + должность + "\n" + "email: " + email + "\n" + "телефон: " + телефон + "\n" + "зарплата: " + зарплата + "\n" + "возраст: " + возраст);
+        System.out.println("ФИО: " + ФИО + "\n" + "должность: " + должность + "\n" + "email: " + email + "\n" + "телефон: " + телефон + "\n" + "зарплата: " + зарплата + "\n" + "возраст: " + возраст + "\n");
     }
 }
 
